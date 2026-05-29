@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="top-spacing-line"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Homepage</title>
+
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/mute.js" defer></script>
+    <script src="scripts/sound.js"></script>
+    <script src="scripts/cookies.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+    <header>
+
+        <nav id="top-navbar">
+            <ul>
+                <li class="active"><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About the Game</a></li>
+                <li><a href="mechanics.html">Game Mechanics</a></li>
+                <li><a href="experiences.html">My Experiences</a></li>
+            </ul>
+
+        </nav>
+
+        <section id="button-section">
+            <button onclick="toggleTheme()">Toggle Theme</button>
+
+            <button onclick="toggleMute()">Mute Sound</button>
+
+            <button onclick="showContactForm()">Contact Me Here</button>
+
+        </section>
+
+    </header>
+
+    <main id="content">
+
+        <section id="website-overview">
+
+        <h2>Overview</h2>
+
+        <p>
+        This website is about Stormworks: Build and Rescue, a sandbox
+        engineering game focused on vehicle design, automation,
+        physics, and problem solving.
+        </p>
+
+        <p>
+        The website covers the game itself, important gameplay
+        mechanics, and my own experiences learning and playing it.
+        </p>
+
+        </section>
+
+        <section id="Website Options">
+
+        <h2>What can you do?</h2>
+
+        <p>
+        This website has in-built tools to make sure your experience is the best!
+        Make sure to manage your cookies to your preference!
+        </p>
+
+        <p>
+        This website may change later, but rest assured - there are only positive improvements!
+        </p>
+
+        </section>
+
+        <section id="overview">
+
+        <h2>How to contact me</h2>
+
+        <p>
+        Currently this website is aimed towards you - someone who wants to learn on your own,
+        however should you need to contact me you can do so via the contact box!
+        </p>
+
+        <p>
+        If you find difficulties with using any feature on this website, please message me!
+        </p>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <Button id="manage-cookies-btn" style="border-radius: 15px; border-width: 5px; border-style: outset;">
+                    Click here to manage Cookies!</Button>
+        <p id="cookies-choice-footer">Here the choice of your cookies should be shown!</p>
+
+        <h3>Thanks for reading this page! Make sure to check out all the other pages</h1>
+        <p>&copy; Simon Karlsson 2026</p>
+    </footer>
+
+    </div>
+
+    <button id="scroll-up-btn">Scroll to Top</button>
+
+    <div id="contact-box" class="hidden">
+        <h3>Contact Us</h3>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+
+        <button onclick="sendAndClose()">Send</button>
+        <button onclick="hideContactForm()">Close</button>
+    </div>
+
+</body>
+
+</html>

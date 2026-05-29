@@ -1,0 +1,415 @@
+/* base&standard */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+    color: black;
+
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+
+    background-color: aliceblue;
+
+    min-height: 100vh;
+}
+
+
+/* CONTENT */
+
+#content {
+    background-color: aliceblue;
+
+    min-height: 120px;
+
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    gap: 1rem;
+
+    padding: 15px;
+}
+
+#content section {
+    border: 1px solid #ccc;
+
+    padding: 1rem;
+
+    border-radius: 12px;
+
+    background-color: white;
+}
+
+
+/* NAVBAR */
+
+#top-navbar ul {
+    display: flex;
+    flex-direction: column;
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 5px;
+
+    background-color: #cce6ff;
+}
+
+#top-navbar ul li {
+    width: 100%;
+
+    margin: 2px 0;
+
+    border-radius: 15px;
+}
+
+#top-navbar ul li a {
+    display: block;
+
+    color: black;
+
+    text-align: center;
+
+    padding: 16px 18px;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+}
+
+#top-navbar ul li a:hover,
+.active {
+    background-color: aliceblue;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 10px 20px;
+
+    margin: 5px;
+
+    cursor: pointer;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+#button-section {
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: #EBF2FF;
+}
+
+#button-section button {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: #5E819D;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+
+    background-color: #cce6ff;
+
+    padding: 10px;
+}
+
+
+/* scroll btn */
+
+#scroll-up-btn {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    display: none;
+
+    padding: 10px 15px;
+
+    background-color: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#scroll-up-btn:hover {
+    background-color: #555;
+}
+
+
+/* Contact box */
+
+.hidden {
+    display: none;
+}
+
+#contact-box {
+    position: fixed;
+
+    top: 20%;
+    left: 30%;
+
+    width: 40%;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 2px solid #333;
+
+    border-radius: 12px;
+
+    z-index: 1000;
+}
+
+#contact-box input {
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+
+
+/* mobile*/
+/* mobile first */
+
+@media (max-width: 768px) {
+
+    #cookies-box-div {
+        width: 100vw !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #cookies-box-section {
+        margin-left: 5px !important;
+        margin-right: 20px !important;
+    }
+
+    #contact-box {
+        left: 5%;
+        width: 85%;
+    }
+}
+
+
+/* desktop */
+
+@media (min-width: 900px) {
+
+    #wrapper {
+        width: 80%;
+    }
+
+    #top-navbar ul {
+        flex-direction: row;
+    }
+
+    #top-navbar ul li {
+        width: auto;
+
+        margin-left: 5px;
+    }
+
+    #top-navbar ul li:last-child {
+        margin-left: auto;
+
+        margin-right: 5px;
+    }
+
+    #content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* big desktop */
+
+@media (min-width: 1080px) {
+
+    #wrapper {
+        width: 75%;
+    }
+}
+
+
+/* dark mode */
+
+body.dark-mode {
+    background-color: #121212;
+
+    color: #f0f0f0;
+}
+
+body.dark-mode #wrapper, body.dark-mode #content {
+    background-color: #1b1b1b;
+}
+
+body.dark-mode #content section {
+    background-color: #222;
+
+    color: #f0f0f0;
+
+    border-color: #444;
+}
+
+
+/* NAVBAR */
+
+body.dark-mode #top-navbar ul {
+    background-color: #1d1d1d;
+}
+
+body.dark-mode #top-navbar ul li a {
+    color: #f0f0f0;
+}
+
+body.dark-mode #top-navbar ul li a:hover,
+body.dark-mode .active {
+    background-color: #333;
+}
+
+
+/* button section */
+
+body.dark-mode #button-section {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode #button-section button {
+    background-color: #355066;
+
+    color: white;
+
+    border-color: #4c708d;
+}
+
+
+/* footer */
+
+body.dark-mode footer {
+    background-color: #1d1d1d;
+
+    color: #f0f0f0;
+}
+
+
+/* other buttons */
+
+body.dark-mode button {
+    background-color: #2a2a2a;
+
+    color: white;
+
+    border-color: #555;
+}
+
+
+/* contact box*/
+
+body.dark-mode #contact-box {
+    background-color: #222;
+
+    color: white;
+
+    border-color: #555;
+}
+
+body.dark-mode input {
+    background-color: #333;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+body.dark-mode #contact-box {
+    background-color: #222;
+    color: white;
+    border: 2px solid #555;
+}
+
+body.dark-mode #contact-box input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.dark-mode #contact-box input::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode #contact-box button {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+
+/* tabels */
+
+body.dark-mode table {
+    background-color: #222;
+
+    color: #f0f0f0;
+}
+
+body.dark-mode th {
+    background-color: #2d2d2d;
+
+    color: white;
+}
+
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+    border: 1px solid #555;
+}
+
+body.dark-mode td {
+    background-color: #1f1f1f;
+}
+
+
+/* scrol button */
+
+body.dark-mode #scroll-up-btn {
+    background-color: #444;
+}
+
+body.dark-mode #scroll-up-btn:hover {
+    background-color: #666;
+}

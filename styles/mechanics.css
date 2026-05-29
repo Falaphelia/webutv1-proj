@@ -1,0 +1,40 @@
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.mechanics-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.mechanics-table th,.mechanics-table td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+.mechanics-table th {
+    background: #f0f0f0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #aaa;
+
+    padding: 10px;
+
+    text-align: left;
+}
+
+th {
+    background-color: #e9f3ff;
+}
