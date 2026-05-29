@@ -378,6 +378,24 @@ body.dark-mode #contact-box button {
     border: 1px solid #666;
 }
 
+/* cookies box */
+
+.dark-mode #cookies-box-div {
+    background-color: #444 !important;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode #cookies-box-header {
+    border: 1px solid #666;
+}
+
+.dark-mode #btn-necessary,
+.dark-mode #btn-all {
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
 
 /* tabels */
 
@@ -404,7 +422,7 @@ body.dark-mode td {
 }
 
 
-/* scrol button */
+/* scroll btn */
 
 body.dark-mode #scroll-up-btn {
     background-color: #444;
